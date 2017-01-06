@@ -16,12 +16,14 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
-*.lnk
-
 # Logs
 logs
 *.log
 npm-debug.log*
+
+# lnk
+*.lnk
+
 
 # Runtime data
 pids

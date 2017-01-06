@@ -1,0 +1,12 @@
+// Media Queries
+
+$bp: (s: 767px, m: 992px, l: 1280px)
+
+=mq($bparg)
+	@if map-has-key($bp, $bparg)
+		@media (min-width: #{map-get($bp, $bparg)})
+			@content
+	@else
+		@warn "Unfortunately, no value could be retrieved from `#{$bparg}`. " + "Please make sure it is defined in `$bp` map."
+
+
