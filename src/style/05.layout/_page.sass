@@ -1,0 +1,32 @@
+
+#body_wrap
+	width: 100%
+	background-color: #000
+	color: #fff
+
+#root_header
+	transition: min-height 0.2s
+	position: relative
+	min-height: 200px
+	display: flex
+	justify-content: center
+	align-items: center
+	+mq(s)
+		min-height: 300px
+	+mq(m)
+		min-height: 100vh
+
+	h1
+		+sitename
+
+
+main#root_main
+	background-color: lighten(#000, 7.5%)
+	min-height: 300px
+	& > #hero
+		height: 300px
+
+#root_footer
+	background-color: lighten(#000, 15%)
+	min-height: 500px
+
